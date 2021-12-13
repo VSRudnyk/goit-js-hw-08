@@ -8,7 +8,6 @@ const player = new Player('vimeo-player', {
 
 const onPlay = function(data) {
     localStorage.setItem('videoplayer-current-time', data.seconds);
-    console.log('hello');
 };
 const throttled = throttle(onPlay, 1000);
 
